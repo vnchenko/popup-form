@@ -1,0 +1,43 @@
+.form-field {
+  font-size: 13px;
+  font-weight: bold;
+
+  input:not([type="checkbox"]) {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+
+    margin-top: 10px;
+    margin-bottom: 23px;
+    padding-left: 10px;
+  }
+}
+[type="checkbox"] + label{
+  display: block;
+  margin-bottom: 20px;
+}
+[type="checkbox"] {
+  display: none;
+}
+[type="checkbox"] + label:before {
+  content: "\2713";
+  border: .81px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  line-height: 13px;
+
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 5px;
+  color: transparent;
+}
+[type="checkbox"]:checked + label:before {
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  color: #fff;
+  background-color: #3b99fc;
+}

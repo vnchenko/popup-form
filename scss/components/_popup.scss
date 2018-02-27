@@ -1,0 +1,152 @@
+.popup {
+  margin-left: 20px;
+
+  height: 505px;
+  width: 100%;
+  max-width: 840px;
+
+  border-top: 2px solid red;
+  border-bottom: 2px solid gainsboro;
+
+  &__header {
+    height: 85px;
+    max-width: 840px;
+    position: relative;
+
+    &-text {
+      text-align: center;
+      font-size: 31px;
+      font-weight: bold;
+      line-height: 85px;
+
+
+    }
+
+  }
+  &__close {
+    position: absolute;
+    right: calc(0% + 10px);
+    top: calc(0% + 10px);
+
+    border: none;
+    background: rgba(255,255,255,0);
+    height: auto;
+    cursor: pointer;
+    padding: 0;
+
+    img{
+      height: 13px;
+    }
+
+  }
+  &__body {
+    display: flex;
+    /*flex-direction: column-reverse; */
+    justify-content: space-around;
+    height: 335px;
+    align-items: stretch;
+
+    background-color: #f3f3f3;
+    .col-1-of-2{
+      width: 50%;
+      max-width: 420px;
+      align-items: center;
+      margin: 38px 60px;
+    }
+    .col-1-of-2:last-child {
+      border-left: 1px solid #cfcfcf;
+      padding-left: 60px;
+      margin-left: 0;
+    }
+    .form-field_bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: black;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__footer {
+    height: 85px;
+    max-width: 840px;
+    text-align: center;
+    line-height: 85px;
+    font-size: 18px;
+    color: #8f8f8f;
+
+    a {
+      font-weight: bold;
+      color: black;
+    }
+  }
+
+}
+@media (max-width: 800px){
+  .popup {
+    margin-left: 20px;
+    height: 620px;
+    width: 100%;
+    max-width: 480px;
+
+    border-top: 2px solid red;
+
+    &__header {
+      height: 85px;
+      max-width: 840px;
+      position: relative;
+
+      &-text {
+        text-align: center;
+        font-size: 31px;
+        font-weight: bold;
+        line-height: 85px;
+
+
+      }
+
+    }
+    &__close {
+      position: absolute;
+      right: calc(0% + 10px);
+      top: calc(0% + 10px);
+
+      border: none;
+      background: rgba(255,255,255,0);
+      height: auto;
+      cursor: pointer;
+      padding: 0;
+
+      img{
+        height: 13px;
+      }
+
+    }
+    &__body {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      height: 450px;
+      align-items: center;
+
+      background-color: #f3f3f3;
+      .col-1-of-2{
+        max-width: 300px;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+      }
+      .col-1-of-2:last-child {
+        border-left: none;
+        border-bottom: 1px solid #cfcfcf;
+        padding: 0;
+        padding-bottom: 23px;
+      }
+
+    }
+    }
+
+
+}

@@ -1,0 +1,34 @@
+.button {
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  max-width: 103px;
+  width: 100%;
+
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #252525;
+  cursor: pointer;
+
+  position: relative;
+
+
+  &--fb {
+    max-width: 300px;
+    background-color: rgb(62,91,150);
+    margin-bottom: 20px;
+  }
+
+  &--google {
+    max-width: 300px;
+    background-color: rgb(221, 83, 66);
+  }
+  &--icon {
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    left: 0;
+    transform: translate(50%, -50%);
+  }
+}
